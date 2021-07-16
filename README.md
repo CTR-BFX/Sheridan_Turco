@@ -73,9 +73,9 @@ SampleSheet_Reverse_generate.R[[Rscript](./Scripts/SampleSheet_Reverse_generate.
                                 --email xz289@cam.ac.uk -with-report report_nextflow_reverse.html &> nextflow_command_reverse.resume.log &
 ```
 
-**Software versions Table:** <br>
-
-| Software | Version  |
+**Software versions Table:** 
+| Software | Version|
+|------------| --- |
 |Nextflow	|v20.01.0|
 |FastQC	|v0.11.8|
 |Cutadapt|	v2.5|
@@ -119,7 +119,6 @@ Corresponding results are given below
 |Fig.4A | [[PDF](Figures_Tables/CTR_.pdf)] |<IMG SRC="Figures_Tables/CTR.png" width=400px>|  Heatmap for selected markers with interested function|
 |SFig.3A | [[PDF](Figures_Tables/CTR_.pdf)] |<IMG SRC="Figures_Tables/CTR.png" width=400px>|  Heatmap for selected markers with interested function|
 |SFig.3B | [[PDF](Figures_Tables/CTR_.pdf)] |<IMG SRC="Figures_Tables/CTR.png" width=400px>|  Heatmap for selected markers with interested function|
-
 |SData.Fig.3A.4A | [[PDF](Figures_Tables/CTR_.pdf)] |<IMG SRC="Figures_Tables/CTR.png" width=400px>|  Heatmap for selected markers with interested function|
 
 
