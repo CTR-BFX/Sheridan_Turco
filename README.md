@@ -74,6 +74,7 @@ SampleSheet_Reverse_generate.R[[Rscript](./Scripts/SampleSheet_Reverse_generate.
 ```
 
 **Software versions Table:** <br>
+
 | Software | Version  |
 |Nextflow	|v20.01.0|
 |FastQC	|v0.11.8|
