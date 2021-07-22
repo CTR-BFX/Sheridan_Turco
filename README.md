@@ -73,7 +73,7 @@ SampleSheet_Reverse_generate.R[[Rscript](./Scripts/SampleSheet_Reverse_generate.
                                 --email xz289@cam.ac.uk -with-report report_nextflow_reverse.html &> nextflow_command_reverse.resume.log &
 ```
 
-**Software versions Table:** 
+**Software versions Table:**
 | Software | Version|
 |------------| --- |
 |Nextflow	|v20.01.0|
@@ -113,17 +113,22 @@ Corresponding results are given below
 
 | Fig/Tab | Link   | Images |Legend |
 | ----------------------------- | --- |----|----|
-|Fig.2A | [[PDF](Figures_Tables/.pdf)] |<IMG SRC="Figures_Tables/.png" width=400px>| PCA plot for the Top 2000 MVs between the menstrual and scratch comparison |
-|Fig.2B | [[PDF](Figures_Tables/CTR_.pdf)] |<IMG SRC="Figures_Tables/CTR_g.png" width=400px>|  Heatmap clustering plot for the 101 DEGs identified|
-|Fig.3A | [[PDF](Figures_Tables/CTR_.pdf)] |<IMG SRC="Figures_Tables/CTR.png" width=400px>|  Heatmap for selected markers with interested function|
-|Fig.4A | [[PDF](Figures_Tables/CTR_.pdf)] |<IMG SRC="Figures_Tables/CTR.png" width=400px>|  Heatmap for selected markers with interested function|
-|SFig.3A | [[PDF](Figures_Tables/CTR_.pdf)] |<IMG SRC="Figures_Tables/CTR.png" width=400px>|  Heatmap for selected markers with interested function|
-|SFig.3B | [[PDF](Figures_Tables/CTR_.pdf)] |<IMG SRC="Figures_Tables/CTR.png" width=400px>|  Heatmap for selected markers with interested function|
-|SData.Fig.3A.4A | [[PDF](Figures_Tables/CTR_.pdf)] |<IMG SRC="Figures_Tables/CTR.png" width=400px>|  Heatmap for selected markers with interested function|
-
-
-
-
+|Fig.2A | [[PDF](Figures_Tables/Fig2A_PCA.pdf)] |<IMG SRC="Figures_Tables/Fig2A_PCA.png" width=400px>| Principal component analysis (PCA) with the top 2000 most variable genes of the trophoblast cell models: TO (n=4), TO-EVT (n=4), TSC-2D (n=5), TSC-3D (n=5), TSC-EVT (n=5), and TSC-SCT (n=5)|
+|Fig.2B | [[PDF](Figures_Tables/Fig2B_SelMarkers_Heatmap.pdf)] |<IMG SRC="Figures_Tables/Fig2B_SelMarkers_Heatmap.png" width=400px>|  A heatmap of specific markers for each trophoblast subtype of the human first-trimester placenta. The markers are divided into the following groups: markers of pan-trophoblast, syncytiotrophoblast, cell column niche, and extravillous trophoblast. Hierarchical clustering is shown based on the average log2 normalized expression for each marker in each models.|
+|Fig.3A | [[PDF](Figures_Tables/Fig3A_Reactome_BiologicalPathway_UP36_DW15_DotPlot.pdf)] |<IMG SRC="Figures_Tables/Fig3A_Reactome_BiologicalPathway_UP36_DW15_DotPlot.png" width=400px>| clusterProfiler biolgoical theme (reactome) comparison identified enriched pathways between up-regulated and down-regulated significant differential expressed genes for the DESeq2 model comparison TSC-3D vs TO models. The dot size represents the gene ratio which is the number of DEGs identified in the pathway divided by the total up/down DEGs. The colour of thd dots represents the adjusted p-values, blue and red colors signify the padj. Corresponding data for Fig3A is given in Supplementary_Data1.|
+|Fig.4A | [[PDF](Figures_Tables/Fig4A_TSC3DvsTrophorg_sel_BP_Uponly_cell_shape_organisation_cnetplot_colorscheme.pdf)] |<IMG SRC="Figures_Tables/Fig4A_TSC3DvsTrophorg_sel_BP_Uponly_cell_shape_organisation_cnetplot_colorscheme.png" width=400px>| Gene concept network (CNET) plot to highlight the genes in common between 4 selected major biological process pathways upregulated in TSC-3D compared to TO. Corresponding data for this plot is Supplementary Data2B.|
+|SFig.3A | [[PDF](Figures_Tables/SFig3A_Heatmap_sel25_upreg_new.pdf)] |<IMG SRC="Figures_Tables/SFig3A_Heatmap_sel25_upreg_new.png" width=400px>|  Heatmap clustering for selected the top 25 up-regulated differentially expressed genes from DESeq2 analysis on all the one against comparison. Hierarchical clustering is shown based on log2 normalised expression.|
+|SFig.3B | [[PDF](Figures_Tables/SFig3B_TSC-3DvsTO_collapse_Fig.PCA.pdf)] |<IMG SRC="Figures_Tables/SFig3B_TSC-3DvsTO_collapse_Fig.PCA.png" width=400px>|  Principal component analysis plot for the top 2000 most variable genes between TSC-3D and TO. Principal component 1 (PC1) accounted for 66% of the variance and separated the two groups. Genes associated with PC1 included a few syncytiotrophoblast (SCT) markers (PAPPA2, PSG1, VGLL3, PAPPA, PSG3, CSH1, PSG8, PLAC4, CGB5)|
+|SFig.4A | [[PDF](Figures_Tables/SFig4A-TSC-3DvsTO_GOSeSim_allBP_BP_701_thresh_0.9_cluster23_scatterPlot.pdf)] |<IMG SRC="Figures_Tables/SFig4A-TSC-3DvsTO_GOSeSim_allBP_BP_701_thresh_0.9_cluster23_scatterPlot.png" width=400px>| Gene ontology enriched Biological Process (BP) Pathways Semantic Similarity Analysis plot. There are total 23 clusters identified with 701 pathways, similarity parameter is 0.9. Corresponding plot data is Supplementary Data 2A.|
+|SFig.4B | [[PDF](Figures_Tables/SFig4B-TSC3DvsTO_GOSeSim_BPUP_BP_575_thresh_0.9_cluster26_scatterPlot.pdf)] |<IMG SRC="Figures_Tables/SFig4B-TSC3DvsTO_GOSeSim_BPUP_BP_575_thresh_0.9_cluster26_scatterPlot.png" width=400px>|  Gene ontology up enriched Biological Process (BP) Pathways Semantic Similarity Analysis plot. There are total 26 clusters identified with 575 pathways, similarity parameter is 0.9. Corresponding plot data is Supplementary Data 2B.|
+|SFig.4C | [[PDF](Figures_Tables/SFig4C-TSC3DvsTO_GOSeSim_BPDW_BP_169_thresh_0.9_cluster9_scatterPlot.pdf)] |<IMG SRC="Figures_Tables/SFig4C-TSC3DvsTO_GOSeSim_BPDW_BP_169_thresh_0.9_cluster9_scatterPlot.png" width=400px>|  Gene ontology down enriched Biological Process (BP) Pathways Semantic Similarity Analysis plot. There are total 9 clusters identified with 169 pathways, similarity parameter is 0.9. Corresponding plot data is Supplementary Data 2C.|
+| ----------------------------- | --- |----|----|
+|Supplementary_Data1_Fig3A | [[CSV](Figures_Tables/Supplementary_Data1_Fig3A_Reactome_BiologicalPathways_UP36_DW15_summary.csv)] || clusterProfiler biolgoical theme (reactome) comparison identified enriched pathways between up-regulated and down-regulated significant differential expressed genes for the DESeq2 model comparison TSC-3D vs TO models summary table. |
+|Supplementary_Data2A_Fig4A_SFig4A | [[CSV](Figures_Tables/Supplementary_Data2A-TSC3DvsTO_GOSeSim_allBP_BP_N701_thresh_0.9_cluster23_summaryTable.csv)] ||  Gene ontology  all enriched Biological Process (BP) Pathways Semantic Similarity Analysis data summary table. There are total 23 clusters identified with 701 pathways, similarity parameter is 0.9.|
+|Supplementary_Data2B_SFig4B | [[CSV](Figures_Tables/Supplementary_Data2B-TSC3DvsTO_GOSeSim_BPUP_BP_N575_thresh_0.9_cluster26_summaryTable.csv)] ||  Gene ontology up-regulated enriched Biological Process (BP) Pathways Semantic Similarity Analysis data summary table. There are total 23 clusters identified with 575 pathways, similarity parameter is 0.9.|
+|Supplementary_Data2B_SFig4C | [[CSV](Figures_Tables/Supplementary_Data2C-TSC3DvsTO_GOSeSim_BPDW_BP_N169_thresh_0.9_cluster9_summaryTable.csv)] ||  Gene ontology down-regulated enriched Biological Process (BP) Pathways Semantic Similarity Analysis data summary table. There are total 9 clusters identified with 169 pathways, similarity parameter is 0.9.|
+|TF_list | [[xlsx](Figures_Tables/SHuman_TFList.xlsx)] || Human Transcriptome Factor list. |
+|TF_list_overlap | [[CSV](Figures_Tables/TSC3D_Trophorg_Up2257_overlap_TF_N328.csv)] || Human Transcriptome Factor list overlap with up-regulated DEGs in the model comparison TSC-3D vs TO.|
 
 
 ## Software R Versions & Methods
@@ -175,4 +180,4 @@ other attached packages:
 
 ## Contact
 
-Contact Xiaohui Zhao (xz289 -at- cam.ac.uk)
+Contact Xiaohui Zhao (xz289 -at- cam.ac.uk) and Russell S.Hamilton (rsh46 -at- cam.ac.uk)
