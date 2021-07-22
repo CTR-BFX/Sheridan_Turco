@@ -99,7 +99,7 @@ SortMeRNA|	v2.1b|
 ## Step 2: Differential Analysis using R (v3.6.2) with DESeq2 (v1.26.0) & Gene Ontology Analysis
 
 The analysis code is <br>
-DESeq_Analysis_Rcode[[R](./Scripts/CTR_myt25_0006-RevStrand_DESeq_GO_Analysis.R)]
+DESeq_Analysis_Rcode[[R](./Scripts/DESeq_GO_Analysis.R)]
 
                  Design formula ~ condition
 
