@@ -47,14 +47,13 @@ differentially expressed genes with Benjamini–Hochberg (BH) adjusted p-values
 <0.05 were identified. Significant differentially expressed genes from each
 comparison was selected based on the adjusted p-values < 0.05 and absolute
 log2FoldChange is greater than 1. For heatmaps (Fig.2A and SFig.3A), gene-level transcripts expression
-values were derived by log2 normalized transformed values. ComplexHeatmap (v 2.6.2) was applied to generate the heatmap (Gu, Eils and Schlesner, 2016). To identify the key markers of each model and make unbiased clustering across six models, one against all DESeq analysis was performed for each model. Then order the log2FoldChange and adjusted pvalue, select the top upregulated markers from each comparison and generate the heatmap SFig.3A. <br>
+values were derived by log2 normalized transformed values. ComplexHeatmap (v 2.6.2) was applied to generate the heatmap (Gu, Eils and Schlesner, 2016). To identify the key markers of each model and make unbiased clustering across six models, one against all DESeq2 analysis was performed for each model. Then order the log2FoldChange and adjusted pvalue, select the top up-regulated markers from each comparison and generate the heatmap SFig.3A. <br>
 
-Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG)
-pathway analysis was performed using R package clusterProfiler (v 3.14.3)
-(Yu et al., 2012). Significant differential expressed genes identified using DESeq2
-were used as input. Significantly upregulated Biological Process enriched terms were 575 identified by applying the
-default clusterProfiler algorithm coupled with Fisher's exact test statistic (p ≤ 0.05,
-q ≤ 0.05) using significant differential expressed upregulated genes from the comparison between TSC-3D and TO. GO semantic similarity is also performed to cluster genes into different clusters based on their functional similarity, and use it to measure the similarities among 575 GO Biological Process terms to reduce the redundancy of GO enrichment results. GO plots were drawn using R package ggplot2 (v 3.3.2), enrichplot (v 1.10.2). <br>
+Gene Ontology (GO) and GO semantic similarity
+pathway analysis was performed using R package clusterProfiler (v 3.14.3, Yu et al., 2012), GOSemSim (v 2.16.1, Yu et al. 2010) and rrvgo (v 1.2.0, Sayols S, 2020). Significant differential expressed genes identified using DESeq2 analysis between TSC-3D vs TO
+were used as input. In order to check the enriched biological pathways for both up and down regulated DEGs identified as input, "compareCluster" function uses default clusterProfiler algorithm coupled with Fisher's exact test statistic (p ≤ 0.05,
+q ≤ 0.05) is applied for the analysis. There are 36 up-regulated pathways and 15 down-regulated pathways identified (Fig 3A, Supplementary Data 1). Unbiased biological process gene ontology enriched pathway analysis is also performed for all DEGs, up-regulated DEGs and down-regulated DEGs. Based on the number of BP identified,  
+GO semantic similarity is also performed to cluster genes into different clusters based on their functional similarity, and use it to measure the similarities among all/up/down GO BP terms to reduce the redundancy of GO enrichment results. Figures and corresponding GO semantic analysis are presented in SFig.4 (A,B,C) and Supplementary Data 2(A,B,C). GO plots were drawn using R package ggplot2 (v 3.3.2), enrichplot (v 1.10.2). <br>
 
 Normalized read counts were used in the statistical analysis of mRNA abundance of
 key genes. Raw sequencing reads are deposited at EMBL-EBI ArrayExpress with
