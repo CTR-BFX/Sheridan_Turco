@@ -89,7 +89,7 @@ allLanes_counts           <- allLanes_counts[ ,2:ncol(allLanes_counts)]
 corner(allLanes_counts)
 colnames(allLanes_counts)
 
-meta.tbl.ori              <- read.csv("SampleTable_4Lanes_2Run.csv", header=T)
+meta.tbl.ori              <- read.csv(paste0(baseDir, "/reverse_stranded_Analysis/SampleTable_4Lanes_2Run.csv"), header=T)
 
 meta.tbl            <- as.data.frame(colnames(allLanes_counts), drop=F)
 colnames(meta.tbl)  <- c("sampleID")
@@ -676,7 +676,7 @@ ScaleCols.deg <- colorRampPalette(colors = c("purple4","white","darkgreen"))(len
 cnames <- Allmarkers[Allmarkers %in% rownames(mplt.mat)]
 mplt.mat.ord <- mplt.mat[cnames,]
 mplt.mat.length <- unlist(lapply(list(MononuclearT, SyncytioT, ColumnNiche, ExtravillousT), function(x) length(x)))
-colnames(mplt.mat.ord) <- c("TSC-2D", "TSC-3D", "TSC-EVT", "TSC-STB", "Troph.org", "Troph.org-EVT")
+colnames(mplt.mat.ord) <- c("TSC-2D", "TSC-3D", "TSC-EVT", "TSC-STB", "TO", "TO-EVT")
 
 ## Fig2B remove HLA-A and HLA-B
 mplt.mat.sub <- mplt.mat.ord[-c(14:15),]
@@ -699,8 +699,8 @@ pht_list.sub = Heatmap(mplt.mat.sub,
                        row_split=factor(rep(c("Mononuclear \nTrophoblast", "Syncytio\nTrophoblast", "Column \nNiche", "Extravillous \nTrophoblast"), 
                                             mplt.mat.sublen),level=c("Mononuclear \nTrophoblast", "Syncytio\nTrophoblast", "Column \nNiche", "Extravillous \nTrophoblast")),
                        row_order = c(1:dim(mplt.mat.sub)[1]),
-                       column_order=factor(c("TSC-2D", "TSC-3D", "TSC-EVT", "TSC-STB", "Troph.org", "Troph.org-EVT"),
-                                           levels=c("TSC-2D", "TSC-3D", "TSC-EVT", "TSC-STB", "Troph.org", "Troph.org-EVT")),
+                       column_order=factor(c("TSC-2D", "TSC-3D", "TSC-EVT", "TSC-STB", "TO", "TO-EVT"),
+                                           levels=c("TSC-2D", "TSC-3D", "TSC-EVT", "TSC-STB", "TO", "TO-EVT")),
                        column_names_side = "top", 
                        cluster_row_slices = T,
                        row_title_rot = 90,
@@ -720,10 +720,11 @@ dev.off()
 
 
 
-message("+-------   Heatmap plot for each cell type selected top up-regulated 20 genes  ------------------+")
+message("+-------   Heatmap plot for each cell type selected top up-regulated 25 genes  ------------------+")
 
 selNum            <- 25
 selHeat.sigG      <- list()
+numsigs           <- c(113,1037,835,1112,3355,892)
 
 for(i in 1:length(cellNames)){
   #load(file = paste0(baseDir, "/reverse_stranded_Analysis/",Project, "-", newmodels[i], "_DESeq_Object.RData"))
@@ -786,8 +787,8 @@ allpht_list = Heatmap(as.matrix(pullheatmat),
                       cluster_rows = T,
                       show_row_dend = F,
                       column_title=NULL,
-                      row_split=factor(rep(c("TO", "TSC-SCT", "TSC-3D", "TSC-2D", "TSC-3EVT", "TO-EVT"), each=25),
-                                       levels=c("TO", "TSC-SCT", "TSC-3D", "TSC-2D", "TSC-3EVT", "TO-EVT")),
+                      row_split=factor(rep(c("TO", "TSC-SCT", "TSC-3D", "TSC-2D", "TSC-EVT", "TO-EVT"), each=25),
+                                       levels=c("TO", "TSC-SCT", "TSC-3D", "TSC-2D", "TSC-EVT", "TO-EVT")),
                       row_order = c(1:dim(pullheatmat)[1]),
                       column_names_side = "bottom", 
                       cluster_row_slices = T,
