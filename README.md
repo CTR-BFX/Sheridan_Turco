@@ -1,6 +1,6 @@
 # Sheridan_Turco
 # Characterization of in vitro human trophoblast models:advantages adn limitations
-Megan A.Sheridan <sup>1,2^*</sup>, Xiahui Zhao<sup>2,3</sup>, Ridma C.Fernando<sup>1,2</sup>, Lucy Gardner<sup>1,2</sup>, Vicente Perez-Garcia<sup>1,2,3</sup>, Qian Li<sup>1,4</sup>, Steven G.E.Marsh<sup>5,6</sup>, Russell S. Hamilton<sup>2,4</sup>, Ashley Moffett<sup>1,2</sup> and Margherita Y Turco<sup>1,2^* </sup> <br>
+Megan A.Sheridan <sup>1,2\*\+</sup>, Xiahui Zhao<sup>2,3</sup>, Ridma C.Fernando<sup>1,2</sup>, Lucy Gardner<sup>1,2</sup>, Vicente Perez-Garcia<sup>1,2,3</sup>, Qian Li<sup>1,4</sup>, Steven G.E.Marsh<sup>5,6</sup>, Russell S. Hamilton<sup>2,4</sup>, Ashley Moffett<sup>1,2</sup> and Margherita Y Turco<sup>1,2\dagger </sup> <br>
 
 Communications Biology volume 4, Article number: 651 (2021) [![DOI](https://doi.org/10.1038/s42003-021-02194-y)](https://doi.org/10.1038/s42003-021-02194-y) <br>
 <sup>1</sup> Department of Pathology, University of Cambridge, Cambridge, UK <br>
