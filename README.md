@@ -15,7 +15,7 @@ Development,  [![DOI](https://doi.org/xxx)](https://doi.org/xx) <br>
 \+current address: Department of Obstetrics, Gynecology and Women's Health, University of Missouri, Columbia, MO <br>
 \++current address: Friedrich Miescher Institute for Biomedical Research (FMI), Basel, Switzerland
 
-Code Release for this github: [![DOI](xxx.svg)](xxx)
+Code Release for this github: [![DOI](https://zenodo.org/badge/359595484.svg)](https://zenodo.org/badge/latestdoi/359595484)
 
 ## Abstract
 Although understanding of human placental development is still limited, two models, trophoblast organoids and trophoblast stem cells (TSC) provide new useful tools to study this. Both differentiate from villous cytotrophoblast (VCT) to either extravillous trophoblast (EVT) or syncytiotrophoblast (SCT). Here, we compare transcriptomes and miRNA profiles of these models to identify which trophoblast they resemble in vivo. Our findings indicate that TSC do not readily undergo SCT differentiation and closely resemble cells at the base of the cell columns from where EVT are derived. In contrast, organoids are similar to VCT and undergo spontaneous SCT differentiation. A defining feature of human trophoblast is that VCT and SCT are HLA null whilst EVT express HLA-C, -G, -E molecules. We find that trophoblast organoids retain these in vivo characteristics. In contrast, TSC do express classical HLA-A and HLA-B molecules and still maintain their expression after EVT differentiation with upregulation of HLA-G. Furthermore, HLA expression in TSC differs when grown in 3D rather than 2D suggesting mechanical cues are important. Our results will allow choice of the most suitable model to study trophoblast development, function and pathology.
