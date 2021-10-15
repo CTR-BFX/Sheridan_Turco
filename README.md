@@ -2,7 +2,7 @@
 # Characterization of in vitro human trophoblast models:advantages adn limitations
 Megan A.Sheridan <sup>1,2\*\+</sup>, Xiahui Zhao<sup>2,3</sup>, Ridma C.Fernando<sup>1,2</sup>, Lucy Gardner<sup>1,2</sup>, Vicente Perez-Garcia<sup>1,2,3</sup>, Qian Li<sup>1,4</sup>, Steven G.E.Marsh<sup>5,6</sup>, Russell S. Hamilton<sup>2,4</sup>, Ashley Moffett<sup>1,2</sup> and Margherita Y Turco<sup>1,2\*\++ </sup> <br>
 
-Development,  [![DOI](https://doi.org/xxx)](https://doi.org/xx) <br>
+Development,  [![DOI](https://doi.org/10.1242/dev.199749)](https://doi.org/10.1242/dev.199749) <br>
 <sup>1</sup> Department of Pathology, University of Cambridge, Cambridge, UK <br>
 <sup>2</sup> Centre for Trophoblast Research, University of Cambridge, Cambridge, UK. <br>
 <sup>3</sup> Department of Physiology, Development and Neuroscience, University of Cambridge, Cambridge, UK <br>
