@@ -1,5 +1,5 @@
 # Sheridan_Turco
-# Characterization of in vitro human trophoblast models:advantages adn limitations
+# Characterization of primary models of human trophoblast
 Megan A.Sheridan <sup>1,2\*\+</sup>, Xiahui Zhao<sup>2,3</sup>, Ridma C.Fernando<sup>1,2</sup>, Lucy Gardner<sup>1,2</sup>, Vicente Perez-Garcia<sup>1,2,3</sup>, Qian Li<sup>1,4</sup>, Steven G.E.Marsh<sup>5,6</sup>, Russell S. Hamilton<sup>2,4</sup>, Ashley Moffett<sup>1,2</sup> and Margherita Y Turco<sup>1,2\*\++ </sup> <br>
 
 Development,  [![DOI](https://doi.org/10.1242/dev.199749)](https://doi.org/10.1242/dev.199749) <br>
